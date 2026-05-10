@@ -1,0 +1,231 @@
+* ::before ::after{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+:root{
+          --bg: #efefef;
+          --border: #aeae99;
+          --accent: #132435;
+          --text: #0a0a0a;
+          --family: DM Serif Display, serif, Arial;
+}
+h2{
+          margin-left: 2%;
+}
+nav{
+          display: flex;
+          justify-content: space-between;
+          background-color: var(--border);
+          font-family: var(--family);
+          font-size: 1.5rem;
+          margin-bottom: 2rem;
+          padding: 0.5rem;
+          position: sticky;
+          top: 0;
+          z-index: 100;
+}
+.navinfo{
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          margin: 1%;
+          gap: 20px;
+          width: 40%;
+}
+.navinfo .links{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 50%;
+          font-size: 1rem;
+}
+.navinfo span{
+          display: flex;
+          width: 100%;
+          align-items: center;
+}
+.navinfo span img{
+          height: 15px;
+          margin: 2%;
+          margin-right: 5%;
+}
+.navinfo .click{
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          width: 45%;          
+}
+.click button{
+          width: 40%;
+          height: 35px;
+          background-color: var(--accent);
+          border: none;
+          color: var(--bg);
+          border-radius: 3px;
+}
+.hero{
+          background-image: url(pics/Airplane2.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          width: 100%;
+          position:inherit;
+          border-radius: 15px;
+          min-height: 400px;
+          padding-top: 1%;
+          margin-bottom: 7rem;
+
+}
+.hero h3{
+          font-family: var(--family);
+          font-size: 2.5rem;
+          font-weight: 600;
+          text-align: center;
+          color: var(--text);
+          text-transform: uppercase;
+          letter-spacing: 1.2;
+}
+.hero .booking{
+          position: absolute;
+          left: 50%;
+          /* bottom: -10%; */
+          margin-top: 17rem;
+          transform: translate(-50%, -50%);
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
+          background-color: var(--bg);
+          width: 65rem;
+          /* z-index: 0; */
+          border-radius: 15px;
+          padding: 1.4%;
+}
+.booking div{
+          border-right: 1px solid var(--border);
+          text-align: center;
+          
+}
+.booking button{
+          background-color: var(--accent);
+          font-size: 2em;
+          color: var(--bg);
+          width: 5rem;
+          border: none;
+}
+.routes{
+          font-family: var(--family);
+          color: var(--border);
+          margin-left: 3%;
+}
+.cards{
+          display: flex;
+          justify-content: space-evenly;
+          min-height: 400px;
+          margin-bottom: 10%;
+}
+.cards div{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          width: 20%;
+          color: var(--bg);
+          padding: 1%;
+          margin-top: 2%;
+          border-radius: 15px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+}
+
+.cards h5{
+          font-size: 25px;
+          margin-bottom: 0.1rem;
+          font-family: var(--family);
+}
+.madrid{
+          background: url(pics/madrid.png);
+}
+       
+.oslo{
+          background: url(pics/oslo.png);
+
+}
+.newyork{
+          background: url(pics/newyork.png);
+     
+}
+.doha{
+          background: url(pics/doha.png);
+}
+.services{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          padding: clamp(3rem, 8vw, 6rem);
+          gap: 2.5rem;
+          align-items: center;
+          
+          
+}
+.services div{
+          display: flex;
+          flex-direction: column;
+          color: var(--text);
+          font-family: var(--family);
+          height: 120%;
+          text-align: center;
+          gap: 1rem;
+          margin-top: -5%;
+}
+.services div b{
+          font-size: 1.2rem;
+          letter-spacing: 1.2;
+}
+.services img{
+          width: 70%;
+          height: auto;       
+          margin: auto;
+}
+.download{
+          background-image: url(pics/Airplane1.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          height: 40%;
+          padding: 3rem;
+          border-radius: 15px;
+          color: var(--text);
+          text-align: center;
+          font-weight: 600;
+          font-family: var(--family);
+          letter-spacing: 0.04em;
+          margin-bottom: 5%;
+}
+.down{
+          font-size: 1.5rem;
+          line-height: 1.2;
+}
+.load{
+          font-size: 0.9rem;
+          width: auto;
+          height: 2.4rem;
+          background-color: var(--text);
+          color: var(--border);
+          border: none;
+          border-radius: 3px;
+          transition: background 0.3s, color 0.2s;
+}
+.load:hover{
+          background-color: var(--border);
+          color: var(--accent);
+}
+footer{
+          background-color: var(--border);
+          display: flex;
+          font-family: var(--family);
+          justify-content: space-between;
+          color: var(--accent);
+          align-items: center;
+          line-height: 1.3;
+          letter-spacing: 0.06em;
+          padding: clamp(2rem, 5vw, 2rem);
+}
