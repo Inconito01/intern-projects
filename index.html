@@ -4,32 +4,28 @@
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Airline project</title>
-          <link rel="stylesheet" href="group.css">
+          <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <h2 class="logo">Air Kaduna</h2>
-        <div class="navinfo">
-            <div class="links">
-                <span><img src="pics/question.png" alt=""><p class="help">Help</p></span>
-                <span><img src="pics/plane.png" alt=""><p class="trips">My Trips</p></span>
-            </div>
-            <div class="click">
-                <button class="sign">Sign Up</button>
-                <button class="login" onclick="location='login.html'">Log In</button>
-            </div>
-        </div>
-    </nav>  
+    <header>
+        <div class="logo"><a href="index.html">Air Kaduna</a></div>
+        <nav>
+            <a href="help.html"><img src="pics/question.png"> Help</a>
+            <a href="travels.html"><img src="pics/plane.png"> My Trips</a>
+            <a href="signup.html" class="signup">Sign Up</a>
+            <a href="login.html" class="login">Log In</a>
+        </nav>
+    </header>
     <section class="hero">
         <h3>Book your next adventure</h3>
         <div class="booking">
             <div>  
                 <p class="booking-title">From</p>
-                <p class="booking-info">London stanstead</p>
+                <input type="search" class="booking-info">
             </div>
             <div>  
                 <p class="booking-title">To</p>
-                <p class="booking-info">Stockholm</p>
+                <input type="search" class="booking-info">
             </div>
             <div>  
                 <p class="booking-title">Depature</p>
@@ -39,7 +35,7 @@
                 <p class="booking-title">Return</p>
                 <input type="date" id="arrive">
             </div>            
-            <button class="arrow"><b>&rightarrow;</b></button>
+            <button class="arrow" onclick="location='travels.html'"><b>&rightarrow;</b></button>
         </div>
     </section>    
     <section class="popular">
@@ -86,13 +82,13 @@
         <button class="load">Download the app</button>
     </div>
     <footer>
-        <h2 class="foot">Air Kaduna</h2>
-        <div class="foothelp">
-            <p><b>Help</b></p>
-            <p>FAQ</p>
-            <p>Customer services</p>
-            <p>How to book</p>
-            <p>Contact us</p>
+        <div class="logo">Air Kaduna</div>
+        <div class="footer-links">
+            <a href="help.html">Help</a>
+            <a href="help.html#faq">FAQ</a>
+            <a href="help.html#customer-service">Customer Service</a>
+            <a href="help.html#guides">How To Guides</a>
+            <a href="help.html#contact">Contact Us</a>
         </div>
     </footer>
 </body>

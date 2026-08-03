@@ -1,4 +1,6 @@
-*, ::before, ::after{
+*,
+*::before,
+*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,16 +11,22 @@
     --border: #aeae99;
     --accent: #132435;
     --text: #0a0a0a;
-    --family: DM serif display;
+    --family: 'DM Serif Display', serif, Arial;
+}
+
+body{
+    background: var(--bg);
+    color: var(--text);
 }
 
 a{
     color: inherit;
     text-decoration: none;
 }
-h2{
+
+/* h2{
       margin-left: 2%;
-}
+} */
 header{
     height: 100px;
     display: flex;
@@ -26,21 +34,24 @@ header{
     align-items: center;
     background-color: var(--border);
     font-family: var(--family);
+    padding: clamp(3rem, 8vw, 5rem);
     margin-bottom: 2.5rem;
     padding: 0 38px;
     position: sticky;
     top: 0;
     z-index: 100;
 }
+
 .logo{
     color: var(--accent);
     font-size: 2rem;
     font-weight: 800;
-    transition: font-size 0.2s;
+    transition: font-size 0.1s;
 }
-header .logo:hover{
-    font-size: 2.2rem;
+.logo:hover{
+    font-size: 2.1rem;
 }
+
 nav{
     display: flex;
     align-items: center;
@@ -48,6 +59,7 @@ nav{
     color: var(--text);
     font-size: 12px;
 }
+
 nav a{
     display: inline-flex;
     align-items: center;
@@ -80,185 +92,6 @@ img{
     background-color: var(--accent);
     color: var(--bg);
 }
-.hero{
-    background-image: linear-gradient(rgba(239, 239, 239, 0.19), rgba(239, 239, 239, 0.82)), url(pics/Airplane2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: min(100% - 32px, 1180px);
-    position: relative;
-    border-radius: 15px;
-    min-height: 400px;
-    padding: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 7rem;
-
-}
-.hero h3{
-    font-family: var(--family);
-    font-size: 2.5rem;
-    font-weight: 600;
-    text-align: center;
-    color: var(--text);
-    text-transform: uppercase;
-    letter-spacing: 1.2;
-    margin-top: 3rem;
-}
-.hero .booking{
-    position: absolute;
-    left: 50%;
-    bottom: -3.5rem;
-    transform: translateX(-50%);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
-    background-color: var(--bg);
-    width: min(65rem, calc(100% - 32px));
-    border-radius: 15px;
-    padding: 1rem;
-    box-shadow: 0 16px 30px rgba(19, 36, 53, 0.12);
-}
-.booking div{
-    border-right: 1px solid var(--border);
-    text-align: center;
-          
-}
-.booking input{
-    max-width: 100%;
-}
-.booking input:focus{
-    border: 1px solid blue;
-}
-.booking button{
-    background-color: var(--accent);
-    font-size: 2em;
-    color: var(--bg);
-    width: 100%;
-    min-height: 3.2rem;
-    border: none;
-    transition: background-color 0.3s, color 0.2s;
-}
-
-.booking button:hover{
-    background-color: var(--border);
-    color: var(--accent);
-}
-.routes{
-    font-family: var(--family);
-    color: var(--accent);
-    margin-left: 3%;
-    margin-bottom: 1rem;
-}
-.cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1.5rem;
-    width: min(1180px, calc(100% - 32px));
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 400px;
-    margin-bottom: 10%;
-}
-.cards div{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    color: var(--bg);
-    min-height: 400px;
-    padding: 1rem;
-    margin-top: 2%;
-    border-radius: 15px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.cards h5{
-    font-size: 25px;
-    margin-bottom: 0.1rem;
-    font-family: var(--family);
-}
-/*picture card style*/
-.madrid{
-    background: url(pics/madrid.png);
-}
-       
-.oslo{
-    background: url(pics/oslo.png);
-}   
-
-.newyork{
-    background: url(pics/newyork.png);
-     
-}
-.doha{
-    background: url(pics/doha.png);
-}
-
-.services{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: clamp(3rem, 8vw, 6rem);
-    gap: 2.5rem;
-    align-items: center;    
-}
-
-.services div{
-    display: flex;
-    flex-direction: column;
-    color: var(--text);
-    font-family: var(--family);
-    height: 120%;
-    text-align: center;
-    gap: 1rem;
-    margin-top: -5%;
-}
-.services div b{
-    font-size: 1.2rem;
-    letter-spacing: 1.2;
-}
-.services img{
-    width: 20%;
-    height: auto;       
-    margin: auto;
-}
-.download{
-    background-image: linear-gradient(rgba(239, 239, 239, 0.4), rgba(239, 239, 239, 0.4)), url(pics/Airplane1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 260px;
-    width: min(1180px, calc(100% - 32px));
-    margin-left: auto;
-    margin-right: auto;
-    padding: 3rem;
-    border-radius: 15px;
-    color: var(--text);
-    text-align: center;
-    font-weight: 600;
-    font-family: var(--family);
-    margin-bottom: 13%;
-}
-.down{
-    font-size: 1.5rem;
-    line-height: 1.7;
-}
-.load{
-    font-size: 0.9rem;
-    width: min(250px, 100%);
-    height: 2.4rem;
-    background-color: var(--accent);
-    color: var(--border);
-    border: none;
-    border-radius: 3px;
-    margin-top: 2rem;
-    transition: background 0.2s, color 0.2s, font-size 0.2s, width 0.2s;
-}
-.load:hover{
-    background-color: var(--border);
-    color: var(--accent);
-    font-size: 1rem;
-    width: min(270px, 100%);
-}
 footer{
     background-color: var(--border);
     display: flex;
@@ -277,8 +110,6 @@ footer{
     margin-right: 55px;
 }
 
-
-    /* Help Page Styles */
 .help-page{
     width: min(1100px, calc(100% - 48px));
     margin: 0 auto 5rem;
@@ -286,7 +117,7 @@ footer{
 }
 
 .help-hero{
-    background-image: linear-gradient(rgba(239, 239, 239, 0.82), rgba(239, 239, 239, 0.82)), url(Airplane1.png);
+    background-image: linear-gradient(rgba(239, 239, 239, 0.82), rgba(239, 239, 239, 0.82)), url(pics/Airplane1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -296,16 +127,10 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-bottom: 2rem;
 }
 
-.help-kicker{
-    color: var(--accent);
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: 0.7rem;
-}
 
 .help-hero h1{
     color: var(--accent);
@@ -316,8 +141,10 @@ footer{
 
 .help-hero p:last-child{
     max-width: 560px;
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     line-height: 1.7;
+    text-align: center;
+    font-weight: 700;
 }
 
 .help-actions{
@@ -408,6 +235,11 @@ footer{
     align-items: center;
     gap: 2rem;
     padding: clamp(1.5rem, 4vw, 2.5rem);
+}
+.contact-panel div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .contact-panel p:last-child{

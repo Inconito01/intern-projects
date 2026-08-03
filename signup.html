@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-card">
+            <h1>Sign up</h1>
+            <p class="subtitle">Enter your details below to create your account</p>
+
+            <form>
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label>First name</label>
+                        <input type="text" placeholder="enter..." required>
+                    </div>
+                    <div class="input-group">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="enter..." required>
+                    </div>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Phone Number</label>
+                        <input type="text" placeholder="+234 123 456 7890" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="********" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Confirm Password</label>
+                        <input type="password" placeholder="********" required>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <a class="btn-cancel" onclick="location='index.html'">Cancel</a>
+                    <button type="submit" class="btn-confirm" onclick="location='index.html'">Confirm</button>
+                </div>
+            </form>
+
+            <p class="footer-text">Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>
