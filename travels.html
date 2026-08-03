@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Air Kaduna Travels</title>
+  <link rel="stylesheet" href="travels.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html">Air Kaduna</a></div>
+    <nav>
+      <a href="help.html"><img src="question.png">Help</a>
+      <a href="travels.html"><img src="plane.png"> My Trips</a>
+      <a href="signup.html" class="signup">Sign Up</a>
+      <a href="login.html" class="login">Log In</a>
+    </nav>
+  </header>
+
+  <div class="page">
+    <aside class="sidebar">
+      <section class="search-box">
+        <h2 class="panel-title">Your Search</h2>
+
+        <div class="field">
+          <label for="from">From</label>
+          <input type="text" value="London Stansted">
+        </div>
+
+        <div class="field">
+          <label for="to">To</label>
+          <input type="text" value="Stockholm">
+        </div>
+
+        <div class="field">
+          <label for="departure">Departure</label>
+          <input id="departure" type="date" value="2026-06-10">
+        </div>
+
+        <div class="field">
+          <label for="return">Return</label>
+          <input id="return" type="date" value="2026-08-18">
+        </div>
+
+        <button class="btn-search">Change Search</button>
+      </section>
+
+      <hr class="divider">
+
+      <section class="settings">
+        <h2 class="panel-title">Search Settings</h2>
+
+        <div class="filter-group">
+          <span class="filter-title">Stops</span>
+          <label class="option"><input type="radio" name="stops" checked> Non-stop</label>
+          <label class="option"><input type="radio" name="stops"> 1 stop</label>
+          <label class="option"><input type="radio" name="stops"> 2 stops</label>
+          <label class="option"><input type="radio" name="stops"> 3 stops</label>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-title">Bags</span>
+          <div class="bags-row">
+            <span>Cabin baggage</span>
+            <span class="stepper"><button>-</button> 0 <button>+</button></span>
+          </div>
+          <div class="bags-row">
+            <span>Checked baggage</span>
+            <span class="stepper"><button>-</button> 0 <button>+</button></span>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-title">Time</span>
+          <label class="option"><input type="radio" name="time"> Morning</label>
+          <label class="option"><input type="radio" name="time"> Mid-day</label>
+          <label class="option"><input type="radio" name="time"> Evening</label>
+          <label class="option"><input type="radio" name="time"> Night</label>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-title">Price</span>
+          <div class="price-range">
+            <span>$0</span>
+            <input type="range" min="0" max="500" value="240">
+            <span>Any</span>
+          </div>
+        </div>
+      </section>
+    </aside>
+
+    <main>
+      <div class="results-head">Best trip: Low-cost Price</div>
+<!-- first flight card -->
+      <article class="flight-card">
+        <div>
+          <div class="trip">
+            <p class="trip-date">June 10, 2026 - Departure</p>
+            <div class="route">
+              <div>
+                <div class="time">10:45</div>
+                <p class="airport">London Stansted<br>(STN)</p>
+              </div>
+              <div class="flight-line">
+                <div class="plane">+</div>
+                <span>1 h 45 m - Non-stop</span>
+              </div>
+              <div>
+                <div class="time">13:55</div>
+                <p class="airport">Stockholm Arlanda<br>(ARN)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="trip">
+            <p class="trip-date">August 18, 2026 - Return</p>
+            <div class="route">
+              <div>
+                <div class="time">16:20</div>
+                <p class="airport">Stockholm Arlanda<br>(ARN)</p>
+              </div>
+              <div class="flight-line">
+                <div class="plane">+</div>
+                <span>2 h 15 m - Non-stop</span>
+              </div>
+              <div>
+                <div class="time">17:55</div>
+                <p class="airport">London Stansted<br>(STN)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flight-charge">
+          <div class="price">$50</div>
+          <a href="#" class="select-flight">Select this flight</a>
+        </div>
+      </article>
+
+      <article class="flight-card">
+        <div>
+          <div class="trip">
+            <p class="trip-date">June 12, 2026 - Departure</p>
+            <div class="route">
+              <div>
+                <div class="time">11:45</div>
+                <p class="airport">London Luton<br>(LTN)</p>
+              </div>
+              <div class="flight-line">
+                <div class="plane">+</div>
+                <span>2 h 05 m - Non-stop</span>
+              </div>
+              <div>
+                <div class="time">14:55</div>
+                <p class="airport">Stockholm Arlanda<br>(ARN)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="trip">
+            <p class="trip-date">August 19, 2026 - Return</p>
+            <div class="route">
+              <div>
+                <div class="time">18:20</div>
+                <p class="airport">Stockholm Arlanda<br>(ARN)</p>
+              </div>
+              <div class="flight-line">
+                <div class="plane">+</div>
+                <span>1 h 45 m - Non-stop</span>
+              </div>
+              <div>
+                <div class="time">19:55</div>
+                <p class="airport">London Stansted<br>(STN)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flight-charge">
+          <div class="price">$90</div>
+          <a href="#" class="select-flight">Select this flight</a>
+        </div>
+      </article>
+
+      <article class="flight-card">
+        <div>
+          <div class="trip">
+            <p class="trip-date">June 16, 2026 - Departure</p>
+            <div class="route">
+              <div>
+                <div class="time">11:45</div>
+                <p class="airport">London Stansted<br>(STN)</p>
+              </div>
+              <div class="flight-line">
+                <div class="plane">+</div>
+                <span>1 h 55 m - Non-stop</span>
+              </div>
+              <div>
+                <div class="time">14:55</div>
+                <p class="airport">Stockholm Skavsta<br>(NYO)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="trip">
+            <p class="trip-date">August 21, 2026 - Return</p>
+            <div class="route">
+              <div>
+                <div class="time">10:20</div>
+                <p class="airport">Stockholm Arlanda<br>(ARN)</p>
+              </div>
+              <div class="flight-line">
+                <div class="plane">+</div>
+                <span>2 h 30 m - Non-stop</span>
+              </div>
+              <div>
+                <div class="time">12:55</div>
+                <p class="airport">London Stansted<br>(STN)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flight-charge">
+          <div class="price">$147</div>
+          <a href="#" class="select-flight">Select this flight</a>
+        </div>
+      </article>
+
+      <article class="flight-card">
+        <div>
+          <div class="trip">
+            <p class="trip-date">June 18, 2026 - Departure</p>
+            <div class="route">
+              <div>
+                <div class="time">19:45</div>
+                <p class="airport">London Stansted<br>(STN)</p>
+              </div>
+              <div class="flight-line">
+                <div class="plane">+</div>
+                <span>2 h 10 m - Non-stop</span>
+              </div>
+              <div>
+                <div class="time">22:55</div>
+                <p class="airport">Stockholm Arlanda<br>(ARN)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="trip">
+            <p class="trip-date">August 22, 2026 - Return</p>
+            <div class="route">
+              <div>
+                <div class="time">05:20</div>
+                <p class="airport">Stockholm Arlanda<br>(ARN)</p>
+              </div>
+              <div class="flight-line">
+                <div class="plane">+</div>
+                <span>2 h 35 m - Non-stop</span>
+              </div>
+              <div>
+                <div class="time">07:55</div>
+                <p class="airport">London Stansted<br>(STN)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flight-charge">
+          <div class="price">$167</div>
+          <a href="#" class="select-flight">Select this flight</a>
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <footer>
+    <div class="logo">Air Kaduna</div>
+    <div class="footer-links">
+      <a href="help.html">Help</a>
+      <a href="help.html#faq">FAQ</a>
+      <a href="help.html#customer-service">Customer Service</a>
+      <a href="help.html#guides">How To Guides</a>
+      <a href="help.html#contact">Contact Us</a>
+    </div>
+  </footer>
+</body>
+</html>
